@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="page-section clearfix" id="index">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'img/main.jpg' %}" alt="..." />
+</section>
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Moulin Rouge</span>
+                        <span class="section-heading-lower">δυνατες νυχτες</span>
+                    </h2>
+                    <p class="mb-0">Η καλοπέραση είναι η προτεραιότητα του Moulin Rouge. Aπόλαυσε μια βραδιά γεμάτη μουσική, ποτό και χορό από τις επαγγελματίες χορεύτριές μας.
+                        Έλα με την παρέα σου ή γίνε μέλος της δικής μας. 'Οπως και να 'χει, σου εγγυόμαστε πως η βραδιά θα σου μείνει <em>αξέχαστη</em>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+
+
+        <video height="820" width="465" autoplay loop muted controls >
+            <source src="{% static "img/video-1.mp4" %}" type="video/mp4">
+        </video>
+
+        <video height="820" width="465" autoplay loop muted controls >
+            <source src="{% static "img/video-2.mp4" %}" type="video/mp4">
+        </video>
+
+
+    </div>
+    </div>
+    </div>
+</section>
+
+<section class="page-section clearfix" id="cover">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'img/cover-blue.jpg' %}" alt="..." />
+</section>
+
+<section class="page-section cta" id="hours">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-5">
+                        <span class="section-heading-lower">ΕΙΜΑΣΤΕ ΑΝΟΙΧΤΑ</span>
+                    </h2>
+                    <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Δευτέρα
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Τρίτη
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Τετάρτη
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Πέμπτη
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Παρασκευή
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Σάββατο
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                        <li class="list-unstyled-item list-hours-item d-flex">
+                            Κυριακή
+                            <span class="ms-auto">10:00 μ.μ.</span>
+                        </li>
+                    </ul>
+                    <p class="address mb-5">
+                        <em>
+                            <strong>Πελασγίας 54, Περιστέρι 121 36</strong>
+                            <br />
+                            Αθήνα
+                        </em>
+                    </p>
+
+                    <p class="mb-0">
+                        <small><em>Αριθμός επικοινωνίας</em></small>
+                        <br />
+                        (+30) 690 95 79 909
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section cta" id="map">
+<div class="container">
+  <div class="row">
+    <div class="col-xl-9 mx-auto">
+      <div class="cta-inner bg-faded text-center rounded" id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.4710251094302!2d23.68279438808941!3d38.01279715093311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a34f82c1bd7b%3A0x54e8a0d1527273ed!2sPelasgias%2051%2C%20Peristeri%20121%2036%2C%20Greece!5e0!3m2!1sen!2suk!4v1641220711410!5m2!1sen!2suk"
+        style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="460px"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock %}

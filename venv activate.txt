@@ -1,0 +1,1 @@
+ & "e:/Moulin Rouge/moulinrouge@3.8.10/Scripts/Activate.ps1"
