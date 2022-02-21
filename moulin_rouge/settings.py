@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'moulin_rouge.apps.core.apps.CoreConfig',
 
 ]
@@ -121,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
@@ -128,7 +128,6 @@ STATICFILES_DIRS = [
 #STATIC_ROOT = 'vol/web/static'
 #MEDIA_ROOT = '/vol/web/media'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Django Auth Settings
 
