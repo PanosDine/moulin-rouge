@@ -125,10 +125,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-STATIC_ROOT = '/vol/web/static'
-MEDIA_ROOT = '/vol/web/media'
+#STATIC_ROOT = 'vol/web/static'
+#MEDIA_ROOT = '/vol/web/media'
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Django Auth Settings
 
 LOGIN_REDIRECT_URL = "core:index"
