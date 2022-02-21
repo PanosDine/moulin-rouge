@@ -125,7 +125,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-STATIC_ROOT = '/vol/web/static'
+#STATIC_ROOT = '/vol/web/static'
+
+STATIC_ROOT = Path(BASE_DIR).joinpath('staticfiles')
+#STATICFILES_DIRS = (Path(BASE_DIR).joinpath('static'),)
 MEDIA_ROOT = '/vol/web/media'
 
 # Django Auth Settings
