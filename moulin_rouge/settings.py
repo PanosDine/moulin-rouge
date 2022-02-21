@@ -23,9 +23,9 @@ PROJECT_DIR = os.path.join(BASE_DIR, "moulin_rouge")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'please-change-me')
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
+SECRET_KEY = 'please-change-me'
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
